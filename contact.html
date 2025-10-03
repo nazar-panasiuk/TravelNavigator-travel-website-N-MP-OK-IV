@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>TravelNavigator</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta
+            content="тревел, путеводитель, бронирование, билеты, маршруты, отели, советы путешественникам"
+            name="keywords"
+        />
+        <meta
+            content="Путеводитель и сервис бронирования: подробные гиды, полезные советы, подбор маршрутов, бронирование жилья и билетов — всё для удобного и безопасного путешествия."
+            name="description"
+        />
+
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Icon Font Stylesheet -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+            rel="stylesheet"
+        />
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet" />
+        <link
+            href="lib/owlcarousel/assets/owl.carousel.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+        <div
+            id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+        >
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar Start -->
+        <nav
+            class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5"
+        >
+            <a href="index.html" class="navbar-brand d-flex align-items-center">
+                <h1 class="m-0">TravelNavigator</h1>
+            </a>
+            <button
+                type="button"
+                class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div
+                    class="navbar-nav mx-auto bg-light rounded pe-4 py-3 py-lg-0"
+                >
+                    <a href="index.html" class="nav-item nav-link">Главная</a>
+                    <a href="about.html" class="nav-item nav-link">О нас</a>
+                    <a href="service.html" class="nav-item nav-link">Услуги</a>
+                    <a href="testimonial.html" class="nav-item nav-link"
+                        >Отзывы</a
+                    >
+                    <a href="contact.html" class="nav-item nav-link active"
+                        >Контакты</a
+                    >
+                </div>
+            </div>
+            <a
+                href="contact.html"
+                class="btn btn-primary px-3 d-none d-lg-block"
+                >Связаться</a
+            >
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Page Header Start -->
+        <div
+            class="container-fluid page-header breadcrumbs bg2 py-5 mb-5 wow fadeIn"
+            data-wow-delay="0.1s"
+            contenteditable="false"
+        >
+            <div class="container py-5">
+                <h1
+                    class="display-4 animated slideInDown mb-4"
+                    style="color: #fff"
+                >
+                    Контакты
+                </h1>
+                <nav aria-label="breadcrumb animated slideInDown">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item">
+                            <a href="index.html" style="color: #fff">Главная</a>
+                        </li>
+
+                        <li
+                            class="breadcrumb-item active"
+                            aria-current="page"
+                            style="color: #fff"
+                        >
+                            Контакты
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- Page Header End -->
+
+        <!-- Contact Start -->
+        <div class="container-xxl py-5" contenteditable="false">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                        <h1 class="display-6 mb-5">
+                            Есть вопросы по путеводителям, маршрутам или
+                            бронированию? Свяжитесь с нами
+                        </h1>
+                        <p class="mb-4">
+                            Нужна помощь с подбором маршрута, бронированием
+                            жилья или покупкой билетов? Наша команда экспертов
+                            по путешествиям поможет с выбором готового маршрута,
+                            составлением индивидуального плана поездки и
+                            проверкой вариантов размещения. Оставьте запрос — мы
+                            свяжемся и подготовим рекомендации под ваши
+                            предпочтения.
+                        </p>
+
+                        <form
+                            action="thanks.html"
+                            method="get"
+                            aria-label="Форма связи"
+                        >
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="name"
+                                            name="name"
+                                            placeholder="Ваше имя"
+                                            required
+                                        />
+                                        <label for="name">Ваше имя</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input
+                                            type="email"
+                                            class="form-control"
+                                            id="email"
+                                            name="email"
+                                            placeholder="Ваш email"
+                                            required
+                                        />
+                                        <label for="email"
+                                            >Электронная почта</label
+                                        >
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="subject"
+                                            name="subject"
+                                            placeholder="Тема обращения"
+                                            required
+                                        />
+                                        <label for="subject">Тема</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea
+                                            class="form-control"
+                                            placeholder="Опишите ваш запрос (например: подбор маршрута на 5 дней, помощь с бронированием жилья, советы по билетам)"
+                                            id="message"
+                                            name="message"
+                                            style="height: 100px"
+                                            required
+                                        ></textarea>
+                                        <label for="message">Сообщение</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button
+                                        class="btn btn-primary py-3 px-5"
+                                        type="submit"
+                                        id="submit"
+                                        aria-disabled="true"
+                                    >
+                                        Отправить запрос
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <p class="mt-4 mb-0">
+                            При экстренных вопросах или если нужен быстрый ответ
+                            — используйте контактные данные внизу сайта. Мы
+                            проверяем входящие сообщения ежедневно и свяжемся с
+                            вами в ближайшее рабочее время.
+                        </p>
+                    </div>
+
+                    <div
+                        class="col-lg-6 wow fadeIn"
+                        data-wow-delay="0.5s"
+                        style="min-height: 450px"
+                    >
+                        <div
+                            class="position-relative rounded overflow-hidden h-100"
+                        >
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5170.735487681579!2d76.95377386536785!3d43.25771163081118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836f090379c40b%3A0xfd027ce6f7a2b68c!2sKazakhstan%20Travel%20Agency!5e0!3m2!1suk!2sua!4v1759492584046!5m2!1suk!2sua"
+                                class="position-relative w-100 h-100"
+                                frameborder="0"
+                                style="min-height: 450px; border: 0"
+                                allowfullscreen=""
+                                aria-hidden="false"
+                                tabindex="0"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+
+        <!-- Footer Start -->
+        <div
+            class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn"
+            data-wow-delay="0.1s"
+        >
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-4 col-md-6">
+                        <h1 class="text-white mb-4">TravelNavigator</h1>
+                        <p>
+                            Наша миссия – сделать ваши путешествия удобными и
+                            яркими. Мы предлагаем путеводители, советы, подбор
+                            маршрутов, а также помощь в бронировании жилья и
+                            билетов. С нами организация поездки станет простой,
+                            а отдых – незабываемым.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="text-light mb-4">Контакты</h5>
+                        <p>
+                            <i class="fa fa-map-marker-alt me-3"></i>ул. Зенкова
+                            24, Алматы 050000, Казахстан
+                        </p>
+                        <p><i class="fa fa-phone-alt me-3"></i>+77775259885</p>
+                        <p>
+                            <i class="fa fa-envelope me-3"></i
+                            >travel_navigator@gmail.com
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="text-light mb-4">Быстрые ссылки</h5>
+                        <a class="btn btn-link" href="about.html">О нас</a>
+                        <a class="btn btn-link" href="contact.html"
+                            >Свяжитесь с нами</a
+                        >
+                        <a class="btn btn-link" href="service.html"
+                            >Наши услуги</a
+                        >
+                        <a class="btn btn-link" href="terms-of-use.html"
+                            >Условия использования</a
+                        >
+                        <a class="btn btn-link" href="privacy-policy.html"
+                            >Политика конфиденциальности</a
+                        >
+                        <a class="btn btn-link" href="cookie-policy.html"
+                            >Политика Cookies</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+            ><i class="bi bi-arrow-up"></i
+        ></a>
+
+        <!-- Cookie banner -->
+        <div class="cookie-wrapper show">
+            <div>
+                <i class="bx bx-cookie"></i>
+                <h2 style="text-align: center">Использование файлов Cookie</h2>
+            </div>
+
+            <div class="data">
+                <p>
+                    Этот сайт использует cookie, чтобы предоставить вам
+                    максимально удобный и персонализированный опыт путешествий.
+                    <a href="cookie-policy.html">Узнать больше...</a>
+                </p>
+            </div>
+
+            <div class="buttons">
+                <button class="cookie-button" id="acceptBtn">Принять</button>
+                <button class="cookie-button" id="declineBtn">Отклонить</button>
+            </div>
+        </div>
+        <!-- End Cookie banner -->
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <script src="js/cookiebanner.js"></script>
+    </body>
+</html>
